@@ -420,6 +420,7 @@ const portfolioData = {
             items: [
                 {
                     citation: "Previous Position Statement",
+                    ieeeCitation: "\"Previous Position Statement,\" unpublished position statement draft.",
                     description: "Earlier version of the position statement used as a reference point for how the current portfolio framing and design philosophy evolved.",
                     link: "References/Previous Position Statement.pdf"
                 }
@@ -430,16 +431,19 @@ const portfolioData = {
             items: [
                 {
                     citation: "CIV102 Project Team 502 Design Calculations",
+                    ieeeCitation: "\"CIV102 Project Team 502 Design Calculations,\" design calculations document.",
                     description: "Detailed bridge calculations used to evaluate failure modes, factors of safety, and iteration decisions in the CIV102 structural design project.",
                     link: "References/CIV102 Project Team 502 Design Calculations.pdf"
                 },
                 {
                     citation: "CIV102 Project Team 502 Design Report",
+                    ieeeCitation: "\"CIV102 Project Team 502 Design Report,\" project design report.",
                     description: "Full CIV102 bridge design report documenting concept development, structural analysis, iteration logic, and final testing results.",
                     link: "References/CIV102 Project Team 502 Design Report.pdf"
                 },
                 {
                     citation: "CIV102 Project Team 502 Engineering Assembly",
+                    ieeeCitation: "\"CIV102 Project Team 502 Engineering Assembly,\" engineering drawing and assembly document.",
                     description: "Engineering drawings and assembly documentation for the fabricated CIV102 bridge, including layout and construction planning details.",
                     link: "References/CIV102 Project Team 502 Engineering Assembly.pdf"
                 }
@@ -450,11 +454,13 @@ const portfolioData = {
             items: [
                 {
                     citation: "Design Brief — Weight Theft in the Chestnut Gym",
+                    ieeeCitation: "\"Design Brief - Weight Theft in the Chestnut Gym,\" project design brief.",
                     description: "Problem brief framing the Chestnut gym dumbbell theft opportunity, stakeholder context, and early design motivation for the RFID anti-theft project.",
                     link: "References/Design Brief — Weight theft in the Chestnut gym.pdf"
                 },
                 {
                     citation: "Design Report",
+                    ieeeCitation: "\"Design Report,\" RFID anti-theft system project report.",
                     description: "Project design report covering the RFID-based anti-theft system development, requirements, system architecture, and evaluation rationale.",
                     link: "References/Design Report.pdf"
                 }
@@ -465,21 +471,25 @@ const portfolioData = {
             items: [
                 {
                     citation: "RFP",
+                    ieeeCitation: "\"RFP,\" adjustable swimming resistance system request-for-proposal document.",
                     description: "Request-for-proposal style source document defining expectations, scope, and performance context for the adjustable swimming resistance project.",
                     link: "References/RFP.pdf"
                 },
                 {
                     citation: "SHOWCASE BINDER",
+                    ieeeCitation: "\"SHOWCASE BINDER,\" showcase documentation binder.",
                     description: "Compiled showcase material containing presentation-ready project documentation and supporting design artifacts.",
                     link: "References/SHOWCASE BINDER.pdf"
                 },
                 {
                     citation: "Showcase One-Pager",
+                    ieeeCitation: "\"Showcase One-Pager,\" project summary graphic.",
                     description: "One-page summary graphic used for project showcase communication and concise visual presentation of the design work.",
                     link: "References/Showcase One-Pager.png"
                 },
                 {
                     citation: "Showcase Poster",
+                    ieeeCitation: "\"Showcase Poster,\" project showcase poster.",
                     description: "Poster-format project summary used for showcase presentation, consolidating visuals, problem framing, and solution overview.",
                     link: "References/Showcase Poster.png"
                 }

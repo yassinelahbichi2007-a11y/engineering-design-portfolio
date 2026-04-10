@@ -408,20 +408,18 @@ function renderProject(projectId) {
 function renderReferences() {
     const section = document.createElement('div');
     
-    // Generate HTML for References list
-    const referencesHtml = portfolioData.references.map(group => {
-        const itemsHtml = group.items.map((ref, index) => `
-            <div style="margin-bottom: var(--spacing-lg); padding: 0 var(--spacing-lg) 0 calc(var(--spacing-xl) + 6px); border-left: 2px solid var(--blue-accent);">
-                <p style="margin-bottom: var(--spacing-sm); color: var(--text-primary); font-family: var(--font-head);"><strong>[${index + 1}] ${ref.link ? `<a href="${ref.link}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--blue-accent);">${ref.citation}</a>` : ref.citation}</strong></p>
-                <p style="margin-bottom: 0;">${ref.description}</p>
-            </div>
-        `).join('');
+    // Generate HTML for References list in a continuous IEEE-style numbered sequence
+    const allReferences = portfolioData.references.flatMap(group => group.items);
+    const referencesHtml = allReferences.map((ref, index) => {
+        const citation = ref.ieeeCitation || `"${ref.citation}."`;
+        const citationHtml = ref.link
+            ? `<a href="${ref.link}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--blue-accent);">${citation}</a>`
+            : citation;
 
         return `
-            <h2 style="margin-top: 0; padding-left: calc(var(--spacing-xl) + 6px);">${group.section}</h2>
-            <div style="margin-bottom: var(--spacing-xl);">
-                ${itemsHtml}
-            </div>
+            <p style="margin-bottom: var(--spacing-md); padding-left: calc(var(--spacing-xl) + 6px); text-indent: calc(-1 * var(--spacing-xl)); color: var(--text-secondary);">
+                <strong style="color: var(--text-primary);">[${index + 1}]</strong> ${citationHtml}
+            </p>
         `;
     }).join('');
 
