@@ -187,11 +187,11 @@ const portfolioData = {
                 images: [
                     {
                         src: "Figures/F1-P2-onepager.png",
-                        caption: "Figure 1 — Cutaway view of the ducted propulsion module showing the motor, gearbox, shaft, and counter-rotating propellers used to generate adjustable hydrodynamic resistance."
+                        caption: "Figure 1 — Cutaway view of the ducted propulsion module showing the motor, gearbox, shaft, and counter-rotating propellers used to generate adjustable hydrodynamic resistance. CAD by Rhys Tuohy."
                     },
                     {
                         src: "Figures/F2-P2-onepager.png",
-                        caption: "Figure 2 — Integrated system layout showing the battery housing, control electronics, and manual dial used to adjust motor speed and resistance levels."
+                        caption: "Figure 2 — Integrated system layout showing the battery housing, control electronics, and manual dial used to adjust motor speed and resistance levels. CAD by Rhys Tuohy."
                     },
                     {
                         src: "Figures/F3-P2-onepager.png",
@@ -247,7 +247,7 @@ const portfolioData = {
             },
             finalDesignSolution: {
                 image: "bridge-design-solution.png",
-                imageCaption: "Figure 2: Final p-section geometry selected after structural iteration.",
+                imageCaption: "Figure 2: Final p-section geometry selected after structural iteration. Cross-section generation code by Oliver Dubois.",
                 description: "The final design used a p-shaped cross-section with a reinforced compression flange and closely spaced diaphragms to balance bending resistance, buckling stability, and material efficiency.",
                 keyDecisions: [
                     "Doubling compression flange thickness to delay buckling",
@@ -344,7 +344,7 @@ const portfolioData = {
             finalDesignSolution: {
                 title: "System Architecture & Operating Principle",
                 image: "Figures/F3-P1-onepager.png",
-                imageCaption: "Figure 3 — CAD Model of the installed RFID system with the dumbbell shown in blue and the RFID system shown in gray.",
+                imageCaption: "Figure 3 — CAD Model of the installed RFID system with the dumbbell shown in blue and the RFID system shown in gray. CAD by Perry Xiu.",
                 description: "The final design consists of an RFID-based monitoring system allowing passive detection of dumbbells leaving the gym. Each dumbbell is equipped with a passive RFID tag, while RFID reader antennas are positioned near the gym exit to monitor movement through a detection zone.",
                 keyDecisionsTitle: "System Logic",
                 keyDecisions: [
