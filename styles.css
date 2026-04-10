@@ -199,8 +199,6 @@ main {
 
 .dropdown {
     position: relative;
-    padding-bottom: 12px;
-    margin-bottom: -12px;
 }
 
 .dropdown::after {
@@ -209,7 +207,7 @@ main {
     left: 0;
     right: 0;
     top: 100%;
-    height: 14px;
+    height: 12px;
 }
 
 .dropdown-content {
