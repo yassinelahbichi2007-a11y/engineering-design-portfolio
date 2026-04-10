@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- App Container -->
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-brand" id="nav-brand">ENGINEERING_PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-route="home" class="nav-link active">HOME</a></li>
+                <li><a href="position.html" data-route="position" class="nav-link">POSITION STATEMENT</a></li>
+                <!-- Projects will be injected here via JS -->
+                <li id="projects-dropdown" class="dropdown">
+                    <a href="#" class="nav-link">PROJECTS ▾</a>
+                    <ul class="dropdown-content" id="projects-nav-list">
+                        <!-- Injected via JS -->
+                    </ul>
+                </li>
+                <li><a href="references.html" data-route="references" class="nav-link">REFERENCES</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main id="main-content" data-page="references">
+            <!-- Content will be injected here via JS based on the current route -->
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content" id="footer-content">
+                &copy; <span id="current-year"></span> <span id="author-name-footer"></span>. Engineering portfolio.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Data and Application Logic -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+

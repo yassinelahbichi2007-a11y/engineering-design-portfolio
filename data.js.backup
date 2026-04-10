@@ -1,0 +1,305 @@
+// ==========================================
+// PORTFOLIO CONTENT DATA
+// ==========================================
+// This file is your simple interface to edit the website content.
+// Update the text, lists, and image paths below, and the website will automatically update.
+// No other code changes are needed!
+
+const portfolioData = {
+    // ----------------------------------------
+    // GLOBAL SETTINGS
+    // ----------------------------------------
+    siteName: "Engineering Portfolio",
+    authorName: "Yassine Lahbichi",
+    
+    // ----------------------------------------
+    // HOME PAGE
+    // ----------------------------------------
+    home: {
+        hero: {
+            name: "Yassine Lahbichi",
+            role: "Engineering Science Student – University of Toronto",
+            skills: "Engineering Design • Physics-driven systems • Human-centered design",
+            description: "This portfolio presents my engineering design work, focusing on design reasoning, decision processes, and verification rather than only final outcomes."
+        },
+        purpose: {
+            title: "Purpose of this Portfolio",
+            content: "This portfolio documents my development as an engineering designer through academic and technical projects. It focuses on how I approach engineering problems, structure design spaces, justify decisions, and evaluate solutions.",
+            subContent: "Rather than presenting only final designs, this portfolio emphasizes:",
+            bullets: [
+                "Problem framing and requirement development",
+                "Design space exploration and concept selection",
+                "Engineering justification of decisions",
+                "Verification and testing approaches"
+            ],
+            footer: "Projects are structured to highlight the reasoning behind design decisions and the evolution of concepts."
+        },
+        methods: {
+            title: "Engineering Design Methods",
+            content: "This portfolio applies structured engineering design methods (Core Technical Methods and Frameworks – CTMFs) to support rigorous design development and decision making.",
+            subContent: "Methods presented across projects include:",
+            bullets: [
+                "Requirements engineering",
+                "Evaluation criteria development",
+                "Design space exploration",
+                "Concept selection methods",
+                "Verification planning",
+                "Reference design analysis",
+                "Prototyping approaches"
+            ],
+            footer: "Each project shows how these methods supported engineering decisions."
+        },
+        positionStatement: {
+            title: "Engineering Position Statement",
+            intro: "This statement outlines my approach to engineering design, my design priorities, and my continuous evolution as an engineer.",
+            sections: [
+                {
+                    title: "On what engineering design is",
+                    content: "Design is the act of making intentional choices toward an outcome that matters. That framing already excludes a lot: it rules out designing for novelty, for aesthetics alone, or for the sake of solving whatever problem happens to be in front of you. The choice of which problem to address is itself a design decision, and often the most consequential one. Understanding who is affected, and how, is what separates a solution that works from one that merely functions. A solution that doesn't outlast the moment it was built for hasn't really solved anything.<br><br>Engineering is what gives that process its discipline. It turns constraints into advantages — and that's a specific claim: constraints are the material, not the obstacle. A rule of nature tells you what's possible; a stakeholder constraint tells you what's necessary. Working within both is what gives a solution its integrity. Without constraints, there's no engineering; just speculation. So engineering design, taken together, is a structured process of making intentional choices under real constraints, toward outcomes that genuinely matter to the people they affect.",
+
+                },
+                {
+                    title: "On service, systems, and iteration (Leo Club)",
+                    content: "Running logistics for my <span style=\"position: relative; cursor: help; border-bottom: 1px dotted var(--blue-accent);\" title=\"Leo Club is a youth volunteering organization affiliated with Lions Club International. High school and university students join to run community service projects: fundraisers, clean-up initiatives, charity events, and so on. Members take on real leadership and logistics roles within the club. It's present in over 140 countries.\">Leo Club</span> made one thing clear: good intentions don't scale. Mobilizing volunteers, coordinating equipment, assigning roles, maintaining safety, and adapting to conditions on the day — that's a system problem, not a goodwill problem. The forest clean-up looked simple until planning began, and then it became a real design challenge with real failure modes. The lesson wasn't that service is complicated; it was that service done well requires the same structured thinking as any engineering project. The desire to resolve the issue has to be there, but desire alone produces nothing reliable.<br><br>That same experience taught me what iteration actually costs. The first fundraising gala failed partly because of a sandstorm, and partly because the venue decision prioritized cost over accessibility. Both are design failures, but only one was unpredictable. Choosing a location far from the target audience to save money was an optimization on the wrong variable — the solution looked good on a spreadsheet and fell apart in reality. The second gala moved closer to the stakeholders; attendance improved, and so did everything downstream of it. That sequence — decision, failure, diagnosis, adjustment — is what iteration actually looks like. It's not a loop you run by choice; it's the only honest way to close the gap between what you designed and what the world needs."
+                },
+                {
+                    title: "On responsibility, values, and why energy",
+                    content: "Engineers choose their problems, and that choice carries consequences. The problems worth choosing are the ones where the impact is real and the need is genuine. This isn't idealism; it's a design criterion. Who benefits, and how much, and for how long, are measurable questions. An engineer who ignores them hasn't accounted for the full system.<br><br>Four values shape how I apply that criterion: long-term impact, service, sustainability, and teamwork. They determine which problems are worth framing, which tradeoffs are acceptable, and what counts as success. A solution that works today but degrades its environment or excludes the people it was meant to serve hasn't met the standard. Teamwork belongs here too, not as a soft skill but as a structural requirement; no solution of any significance is built by one person, and designing without accounting for collaboration is designing for a condition that won't exist.<br><br>Energy is where those values converge into a specific direction. Energy is infrastructure for everything else. It determines whether a hospital can run, whether a school can stay lit after dark, whether a region can attract industry, or remain cut off from it. Instability in energy supply has historically preceded political instability, economic stagnation, and humanitarian crises. Working in energy means working on a problem whose solution propagates outward; every improvement compounds across sectors and populations. That's the most direct path from engineering work to large-scale human impact, and it's the clearest expression of the values I bring to design."
+                },
+                {
+                    title: "On method, strategy, and process (basketball and the design loop)",
+                    content: "Basketball is a constrained, dynamic environment where decisions have to be made faster than they can be fully reasoned through. What you develop is pattern recognition: reading the court, understanding where teammates will be, anticipating how defenders will respond. In a losing scenario, the instinct is to force the play — rush toward the winning point, increase pressure, act louder. The move that actually worked was the opposite: slow the pace, fade into the background, let the defense forget you, then receive the pass and score efficiently. That's a systems-level intervention. Rather than attacking the problem directly, you changed the state of the environment first.<br><br>The same instinct shows up in engineering. The impulse to force a solution is common and usually costly. Observing first, understanding the system, and acting at the point of least resistance tends to produce more durable outcomes. Being smart beats being loud.<br><br>That logic is what shaped my design loop. Each step depends on the previous one. Observation without alignment produces individual action that diverges from the team. Alignment without action is just agreement. Action without reflection produces repetition rather than improvement. Iteration without honest observation accelerates the same mistake. The loop only works if every step is taken seriously — and it only produces good outcomes if the team running it is functioning as one.",
+                    visuals: [
+                        {
+                            caption: "",
+                            contentHtml: `
+<div class="design-loop">
+  <div class="design-loop-track">
+    
+    <!-- Box 1: OBSERVE -->
+    <div class="design-loop-stage">
+      <h3>OBSERVE</h3>
+      <p class="design-loop-summary">Reading the environment before acting</p>
+      <p style="margin: auto 0 0 0; font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase;">Stakeholders • Constraints • Context • Failure Points</p>
+    </div>
+
+    <div style="align-self: center; color: var(--blue-accent); font-weight: bold; font-size: 1.2rem;">→</div>
+
+    <!-- Box 2: ALIGN -->
+    <div style="flex: 1; background: rgba(15, 23, 42, 0.8); border: 1px solid var(--blue-accent); padding: var(--spacing-sm); border-radius: 6px; text-align: center; position: relative; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
+      <h3 style="color: var(--blue-accent); margin: 0 0 8px 0; font-family: var(--font-head); font-size: 0.95rem;">ALIGN</h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.8rem; line-height: 1.3; color: var(--text-primary); flex: 1;">Ensuring the team shares the same objective</p>
+      <p style="margin: auto 0 0 0; font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase;">Communication • Shared Goals • Roles • Existing Solutions</p>
+    </div>
+
+    <div style="align-self: center; color: var(--blue-accent); font-weight: bold; font-size: 1.2rem;">→</div>
+
+    <!-- Box 3: ACT -->
+    <div style="flex: 1; background: rgba(15, 23, 42, 0.8); border: 1px solid var(--blue-accent); padding: var(--spacing-sm); border-radius: 6px; text-align: center; position: relative; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
+      <h3 style="color: var(--blue-accent); margin: 0 0 8px 0; font-family: var(--font-head); font-size: 0.95rem;">ACT</h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.8rem; line-height: 1.3; color: var(--text-primary); flex: 1;">Proposing and testing ideas strategically</p>
+      <p style="margin: auto 0 0 0; font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase;">Concepts • Prototypes • Trade-offs • Structured Decisions</p>
+    </div>
+
+    <div style="align-self: center; color: var(--blue-accent); font-weight: bold; font-size: 1.2rem;">→</div>
+
+    <!-- Box 4: REFLECT -->
+    <div style="flex: 1; background: rgba(15, 23, 42, 0.8); border: 1px solid var(--blue-accent); padding: var(--spacing-sm); border-radius: 6px; text-align: center; position: relative; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
+      <h3 style="color: var(--blue-accent); margin: 0 0 8px 0; font-family: var(--font-head); font-size: 0.95rem;">REFLECT</h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.8rem; line-height: 1.3; color: var(--text-primary); flex: 1;">Honestly assessing what the outcomes revealed</p>
+      <p style="margin: auto 0 0 0; font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase;">Performance • Lessons • Misconceptions • Gap Analysis</p>
+    </div>
+
+    <div style="align-self: center; color: var(--blue-accent); font-weight: bold; font-size: 1.2rem;">→</div>
+
+    <!-- Box 5: ITERATE -->
+    <div style="flex: 1; background: rgba(15, 23, 42, 0.8); border: 1px solid var(--blue-accent); padding: var(--spacing-sm); border-radius: 6px; text-align: center; position: relative; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
+      <h3 style="color: var(--blue-accent); margin: 0 0 8px 0; font-family: var(--font-head); font-size: 0.95rem;">ITERATE</h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.8rem; line-height: 1.3; color: var(--text-primary); flex: 1;">Refining decisions based on evidence</p>
+      <p style="margin: auto 0 0 0; font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase;">Verification • Adjustment • Reliability • Improvement</p>
+    </div>
+
+    <!-- Feedback Loop Arrow (SVG) -->
+    <svg style="position: absolute; bottom: -50px; left: 0; right: 0; width: 100%; height: 55px; z-index: 1; pointer-events: none;" viewBox="0 0 100 55" preserveAspectRatio="none">
+      <!-- Squared feedback loop path: down -> left -> up -->
+      <path d="M 95 2 L 95 35 L 5 35 L 5 2" stroke="var(--blue-accent)" stroke-width="2" fill="none" stroke-dasharray="5,5" stroke-linecap="butt" />
+      <!-- Arrow head pointing up at the left side -->
+      <polygon points="5,-1 2,6 8,6" fill="var(--blue-accent)" />
+    </svg>
+
+  </div>
+  
+  <div style="width: 100%; text-align: center; margin-top: var(--spacing-lg); margin-bottom: var(--spacing-lg);">
+    <br>
+    <strong style="color: var(--text-secondary); font-family: var(--font-head); font-size: 0.95rem;">Figure 1 — Design loop showing how structured observation, team alignment, and honest reflection drive continuous improvement toward justified decisions.</strong>
+  </div>
+</div>`
+                        }
+                    ]
+                },
+                {
+                    title: "What’s new: On teamwork as a design condition",
+                    content: "No meaningful solution is built alone. That's not a practical observation about workload, it's a structural one about the nature of design itself. Designing in isolation doesn't just slow progress; it degrades the quality of the thinking. Two failure modes make this unavoidable.<br><br>The first is the blind spot problem. You cannot see your own idea from the outside. No matter how rigorously you reason through a concept, you are reasoning from inside it. Another person listening to that idea will catch limitations you've normalized, misconceptions you've built assumptions on top of, and improvements that only become visible from a different vantage point. That external perspective isn't a courtesy; it's a corrective mechanism the design process depends on.<br><br>The second is the interference problem. When team members develop their work in isolation, the outputs don't simply fail to add up — they conflict. Decisions made independently, without alignment, create friction at the integration point. The design doesn't just lose the benefit of collaboration; it absorbs the cost of its absence.<br><br>This is what the French expression captures: un esprit sain dans un corps sain — a healthy mind in a healthy body. The team is the body. The design is the mind. You cannot produce one without the other functioning well. A healthy team isn't a condition that makes design more pleasant; it's a condition that makes good design possible at all.<br><br>The same logic applies at the level of society. Organized human progress — the philosophical society, the city, the institution, and  — exists because individuals accepted that honoring their role within a shared system produces outcomes none of them could reach alone. Internal deadlines operate on exactly that principle. Meeting one isn't about personal discipline; it's about not introducing interference into a system others are depending on. Every person who does their part on time is maintaining the structural integrity of the collective effort.<br><br>That's the standard I hold myself to as a teammate, and the standard I expect a team to function by."
+                },
+                {
+                    title: "The kind of engineer I want to become",
+                    content: "Every argument in this position statement points to the same place.<br><br>Design is the act of making intentional choices toward outcomes that matter — and engineering is the discipline that makes those choices rigorous, grounding them in real constraints rather than speculation. The Leo Club taught me that desire without structure produces nothing reliable, and that the gap between a solution on paper and a solution in reality only closes through honest iteration. Basketball taught me that the best interventions often come from reading the system first and acting at the right moment rather than forcing the obvious play. My values — long-term impact, service, sustainability, and teamwork — determine which problems are worth framing in the first place. And teamwork, understood properly, is the structural condition that makes good design possible at all; not because the work is too large for one person, but because isolation degrades the thinking itself.<br><br>Energy is where all of this converges. It is infrastructure for everything else; the problem whose solution propagates outward across healthcare, education, stability, and opportunity. Working in energy means working at the intersection of technical rigor and genuine human consequence, which is exactly the intersection where I believe engineering should operate.<br><br>My position as a designer is rooted in service and guided by strategy. Service sets the direction: toward real needs, real people, real consequences. Strategy sets the method: structured, adaptive, evidence-driven, and never mistaking a good answer on a spreadsheet for a good answer in the world. Neither works without the other, and neither means anything without a team willing to hold the same standard.<br><br>That is the engineer I am working to become."
+                },
+                {
+                    title: "Connection to the Rest of the Portfolio",
+                    content: "The position statement above is the lens through which this portfolio should be read. Each project that follows demonstrates a different dimension of it in practice. The Adjustable Swimming Resistance System is where context awareness, stakeholder understanding, and structured decision-making under real constraints played out directly. The Matboard Bridge Structural Design is where iteration, failure, and evidence-based choice became concrete; the bridge either holds or it doesn't, and the design process has to account for that honestly. The RFID-based anti-theft system for the Chestnut residence gym is where stakeholder awareness and real-world constraint thinking came first; the problem lived inside a real human ecosystem, with real behavioral and operational constraints, and the design had to respect that before it could propose anything. Together, the three projects don't just demonstrate that engineering work was done; they show how the values and process described here were enacted, tested, and refined through real design experience."
+                }
+            ]
+        },
+        contact: {
+            title: "Contact",
+            email: "yassine.lahbichi@mail.utoronto.ca",
+            linkedin: "https://www.linkedin.com/in/yassine-lahbichi-06a559243/"
+        }
+    },
+
+    // ----------------------------------------
+    // PROJECTS
+    // ----------------------------------------
+    projects: [
+        {
+            id: "proj-swimming", 
+            title: "Adjustable Swimming Resistance System",
+            description: "Development of an adjustable resistance device designed to maintain swimming biomechanics while enabling controlled drag variation through requirement-driven design.",
+            // Below fields utilized when navigating to the project page
+            problem: "...",
+            designDecisions: [],
+            evidenceImages: [],
+            reflection: "",
+            ctmfUsed: [
+                { tabName: "Concept", title: "Key Concept Applied", content: "Detailed breakdown of how the specific engineering concept influenced the design decisions in this phase." },
+                { tabName: "Theory", title: "Theoretical Framework", content: "Explanation of the physical or system theory utilized to validate the structural integrity or performance." },
+                { tabName: "Method", title: "Verification Method", content: "Description of the testing protocol or analytical method deployed to evaluate the design outcomes." }
+            ]
+        },
+        {
+            id: "proj-bridge", 
+            title: "CIV102 Bridge Design Project – Failure-Mode Driven Structural Optimization",
+            description: "Design and analysis of a box-girder bridge using beam theory, failure analysis, and iterative structural optimization to maximize load capacity.",
+            detailedTitle: "Matboard structural bridge designed using beam theory and plate buckling analysis.",
+            heroImage: "bridge-hero.png",
+            heroImageCaption: "Figure 1: Final bridge after fabrication demonstrating the optimized π-section structural design.",
+            projectOverview: {
+                objective: "This project involved designing a 1200 mm span bridge using only matboard and contact cement while maximizing load capacity through structural analysis and geometric optimization.",
+                constraints: [
+                    "Fixed material supply",
+                    "Height limit of 200 mm",
+                    "Minimum deck width of 100 mm",
+                    "Required analytical load prediction"
+                ],
+                contribution: "I contributed to structural analysis, computational modeling, design iteration, engineering drawings, and fabrication of the final bridge."
+            },
+            finalDesignSolution: {
+                image: "bridge-design-solution.png",
+                imageCaption: "Figure 2: Final π-section geometry selected after structural iteration.",
+                description: "The final design used a π-shaped cross-section with a reinforced compression flange and closely spaced diaphragms to balance bending resistance, buckling stability, and material efficiency.",
+                keyDecisions: [
+                    "Doubling compression flange thickness to delay buckling",
+                    "Removing bottom flange to improve efficiency",
+                    "Increasing height to increase moment of inertia",
+                    "Reducing diaphragm spacing to improve shear buckling resistance"
+                ],
+                reflection: "This design reflects my approach of identifying governing structural limits and redistributing material to address the critical failure modes rather than uniformly increasing strength."
+            },
+            engineeringAnalysis: {
+                image: "bridge-analysis.png",
+                imageCaption: "Figure 3: Structural modeling showing shear force and bending moment distributions used to validate design capacity.",
+                evaluationMethods: [
+                    "Shear force diagrams",
+                    "Bending moment diagrams",
+                    "Buckling analysis",
+                    "Factor of safety calculations"
+                ],
+                prediction: "Analysis predicted a maximum load of approximately 1053 N.",
+                safetyFactor: "A factor of safety of 2 was applied to account for construction variability.",
+                reflection: "This analysis demonstrates my reliance on quantitative modeling to guide design decisions while recognizing the need for safety factors to account for real construction uncertainty."
+            },
+            designProcess: {
+                description: "The design evolved through an iterative process using MATLAB cross-section modeling and structural analysis to calculate the factor of safety for each possible failure mode. At each iteration, the governing failure mode was identified as the one with the lowest factor of safety, and the cross-section geometry was modified to increase its resistance, for example by increasing flange thickness to delay buckling or reducing diaphragm spacing to improve stability. This process was repeated until the safety factors became more balanced, leading to a more structurally efficient design where no single failure mode dominated the bridge performance. The design evolved through several iterations:",
+                iterations: [
+                    "Increased height to improve flexural capacity",
+                    "Reduced web spacing to improve buckling behavior",
+                    "Reduced diaphragm spacing from 400 mm to 150 mm",
+                    "Adjusted flange thickness based on failure analysis"
+                ],
+                reflection: "This process shows how I approach engineering design as an iterative refinement process driven by governing physical limits rather than intuition alone.",
+                image: "bridge-iteration-metrics.png",
+                imageCaption: "Figure 4: Structural performance metrics used to guide design convergence."
+            },
+            verificationTesting: {
+                theoreticalCapacity: "Theoretical capacity predicted: 1053 N",
+                adjustedPrediction: "Adjusted prediction after applying a safety factor of 2 based on construction quality: ~526 N",
+                experimentalFailure: "Experimental failure: ~510 N",
+                failureDescription: "Failure occurred at a splice connection due to tension-shear failure.",
+                reflection: "Observing a connection failure rather than global failure reinforced my understanding that engineering models must account for local details and construction realities.",
+                image: "bridge-shear-envelope.png",
+                imageCaption: "Figure 5: Bridge failure during load testing showing structural collapse at the predicted critical region."
+            },
+            engineeringLearning: {
+                principles: [
+                    "Rigor: Using analysis to justify decisions.",
+                    "Iteration: Improving designs through failure-mode analysis.",
+                    "Engineering judgment: Understanding limits of theoretical models.",
+                    "Systems thinking: Recognizing how local connection behavior affects global performance."
+                ],
+                reflection: "This project shaped my design philosophy by reinforcing that engineering optimization must be guided by both analytical modeling and practical understanding of real structural behavior."
+            },
+            testingEvidence: {
+                videoUrl: "https://youtu.be/eNNMuYWvVXE",
+                imageCaption: "Figure 6: Experimental testing validating structural predictions."
+            },
+            overallReflection: {
+                content: "This project illustrates my approach to engineering design as a process driven by identifying governing physical limits and systematically refining a design to address them. Rather than attempting to maximize strength globally, I focused on understanding which failure modes controlled performance and iterated the geometry to improve those specific weaknesses. For example, increasing bridge height improved bending resistance while reducing diaphragm spacing improved buckling resistance, showing how targeted modifications can significantly improve structural efficiency.\n\nThe comparison between analytical predictions and experimental results also shaped my understanding of the limitations of theoretical modeling. While calculations predicted a maximum load of about 1053 N, the adjusted prediction using a factor of safety closely matched the experimental failure around 510 N, reinforcing the importance of incorporating uncertainty into engineering decisions.\n\nMost importantly, the observed failure at a splice connection rather than a global structural mode highlighted how small construction details can govern overall performance. This experience reinforced my focus on considering load paths and real implementation constraints early in the design process rather than relying solely on idealized models.\n\nOverall, this project reflects my developing engineering philosophy: combining analytical rigor with practical judgment, and using iteration to move toward balanced, realistic, and efficient designs rather than theoretically optimal but impractical solutions."
+            },
+            problem: "...",
+            designDecisions: [],
+            evidenceImages: [],
+            reflection: "",
+            ctmfUsed: [
+                { tabName: "Concept", title: "Key Concept Applied", content: "Detailed breakdown of how the specific engineering concept influenced the design decisions in this phase." },
+                { tabName: "Theory", title: "Theoretical Framework", content: "Explanation of the physical or system theory utilized to validate the structural integrity or performance." },
+                { tabName: "Method", title: "Verification Method", content: "Description of the testing protocol or analytical method deployed to evaluate the design outcomes." }
+            ]
+        },
+        {
+            id: "proj-rfid", 
+            title: "RFID Dumbbell Anti-Theft System (Chestnut Gym)",
+            description: "Design of an RFID-based anti-theft system for gym equipment, focusing on stakeholder needs, system integration, and practical implementation constraints.",
+            problem: "...",
+            designDecisions: [],
+            evidenceImages: [],
+            reflection: "",
+            ctmfUsed: [
+                { tabName: "CTMF 1 — Team feedback", title: "Team feedback as an actualisation tool for self-awareness", content: `<h3 style="color: var(--blue-accent); font-family: var(--font-head); margin-top: 0; margin-bottom: 0.5rem;">Observation — How structured feedback revealed strengths and participation gaps</h3><p style="margin-top: 0;">During the team feedback activity following the Alpha Release, I became aware of how my participation patterns influenced the effectiveness of our design process. Structured peer feedback revealed two important aspects of my behaviour: my ability to critically identify inconsistencies in our design work, and my inconsistent engagement during certain divergence discussions.</p><br><img src="rfid-ctmf1-figure1.png" alt="Peer feedback inconsistencies" style="max-width: 100%; height: auto; margin: 16px 0;"><br><strong>Figure 1 — Peer feedback highlighting my ability to critically identify inconsistencies and unclear reasoning in the design process.</strong><br><br><p>At the same time, the feedback shown in Figure 2 revealed that although I contributed ideas during discussions, there were moments where I was less involved in shaping the overall project direction. This helped me recognize that inconsistent participation can reduce the effectiveness of divergence, since active engagement is necessary to fully explore the design space and maintain balanced collaboration.</p><br><img src="rfid-ctmf1-figure2.png" alt="Peer feedback participation" style="max-width: 100%; height: auto; margin: 16px 0;"><br><strong>Figure 2 — Peer feedback identifying inconsistent participation during team discussions.</strong><br><br><p>This observation helped me understand that engineering contribution is not only defined by the quality of ideas provided but also by the consistency of engagement throughout the design process. One limitation of this observation is that peer feedback reflects subjective perceptions rather than objective measurements of participation.</p><br><h3 style="color: var(--blue-accent); font-family: var(--font-head); margin-top: 1.5rem; margin-bottom: 0.5rem;">Analysis — Understanding my role in divergence and convergence through PIAA</h3><p>This experience helped me understand the value of structured reflection as a deliberate mechanism for improving engineering teamwork through the PIAA model. The PIAA cycle describes how designers move from Perceiving information, to Interpreting its meaning, Assessing its implications, and finally Acting to improve their approach.</p><br><p>During this activity, I first perceived new information about my behaviour through peer feedback. I then interpreted how these behaviours affected team performance, especially during convergence tasks requiring analytical review and divergence tasks requiring consistent participation.</p><br><p>Through the assessment stage, I recognized how my behaviour influenced design activities such as the Morph Chart and Pugh Chart development. My critical thinking helped improve solution evaluation, but my inconsistent engagement sometimes limited my contribution to broader team direction.</p><br><p>Finally, I acted on this understanding by taking greater responsibility for analytical tasks while making a conscious effort to remain engaged throughout discussions. This experience reinforced that effective engineering teams depend not only on technical contributions but also on consistent engagement and structured reflection.</p><br><h3 style="color: var(--blue-accent); font-family: var(--font-head); margin-top: 1.5rem; margin-bottom: 0.5rem;">Future Action — Improving consistency of engagement and reflective practice</h3><p>Moving forward, I plan to integrate structured reflection by proposing short 3–5 minute process check discussions after major milestones where each team member identifies one effective behaviour and one improvement area.</p><br><p>To improve my consistency of engagement, I will also ensure I actively contribute at least one idea or build on a teammate’s idea during divergence discussions. Additionally, I will deliberately use my strength in critical evaluation by taking a more active role in questioning assumptions during convergence phases.</p><br><p>By introducing these small process adjustments, I aim to transform reflection into an active design tool that improves both my individual contribution and the team’s decision quality.</p>` },
+                { tabName: "CTMF 2 — Role of diverging process", title: "Breaking anchoring bias through divergence tools", content: `<h3 style="color: var(--blue-accent); font-family: var(--font-head); margin-top: 0; margin-bottom: 0.5rem;">Observation — Initial fixation and its impact on the design space</h3><p style="margin-top: 0;">At the beginning of our project, our team experienced anchoring bias by unintentionally framing the opportunity around a predefined technical solution: attaching RFID tags to dumbbells. Instead of defining the problem as reducing theft at Chestnut Gym, we implicitly defined it as improving theft detection performance.</p><br><p>This fixation became visible in our initial NGOs, which included an objective requiring a minimum theft-detection accuracy of 95%, directly derived from RFID technology rather than from the actual design need. As shown in Figure 1, this objective constrained our design space by assuming detection-based solutions were the only viable approach, preventing exploration of prevention or behavioural deterrence approaches.</p><br><img src="rfid-ctmf2-figure1.png" alt="Initial NGO anchoring bias" style="max-width: 100%; height: auto; margin: 16px 0;"><br><strong>Figure 1 — Initial NGO formulation demonstrating anchoring bias by constraining the design space to RFID-based detection solutions.</strong><br><br><p>During a studio review, our TA pointed out that our NGOs were not solution agnostic, which revealed how strongly we were anchored to our initial concept. However, simply recognizing this bias was not sufficient to overcome it, as our thinking remained influenced by the RFID approach.</p><br><p>The turning point came through structured divergence activities where we intentionally generated ideas without referencing RFID. This forced us to explore alternative approaches such as prevention mechanisms, gym layout modifications, and deterrence strategies. By expanding the range of concepts considered, divergence tools allowed us to re-examine our assumptions and reformulate our NGOs into more general objectives such as reliability of theft prevention rather than detection accuracy, as shown in Figure 2.</p><br><img src="rfid-ctmf2-figure2.png" alt="Revised NGO formulation" style="max-width: 100%; height: auto; margin: 16px 0;"><br><strong>Figure 2 — Revised NGO formulation illustrating how divergence enabled reframing toward solution-agnostic performance objectives.</strong><br><br><p>One limitation of this observation is that our realization of anchoring bias came through instructor feedback rather than internal detection, suggesting that additional structured bias-checking methods could further improve team independence in future projects.</p><br><h3 style="color: var(--blue-accent); font-family: var(--font-head); margin-top: 1.5rem; margin-bottom: 0.5rem;">Analysis — Divergence as a mechanism for overcoming cognitive bias</h3><p>This experience showed me that divergence is not only a creativity tool but also a corrective mechanism that helps teams overcome cognitive biases and reopen the design space. While I previously viewed divergence mainly as a way to generate more ideas, I now understand that its deeper purpose is to prevent premature commitment to early concepts.</p><br><p>In our case, anchoring bias reduced the effectiveness of our framing process because our objectives were unintentionally validating a specific solution rather than describing the real design need. Divergence helped correct this by forcing us to temporarily suspend our initial assumptions and explore alternative approaches. This demonstrated that divergence can act as a process safeguard, ensuring that teams evaluate the full design space before committing to specific solution paths.</p><br><p>This experience also helped me understand that framing and divergence are not strictly sequential steps in the FDCR model, but mutually reinforcing activities. Our framing only improved after we diverged widely enough to challenge our assumptions, showing that iteration between these strands is necessary for developing well-constructed NGOs and requirements.</p><br><p>This experience showed me that divergence is not only a creativity tool but also a corrective mechanism that helps teams overcome cognitive biases and reopen the design space. It also reinforced that framing and divergence are not sequential steps in the FDCR model, but mutually reinforcing activities that must sometimes be revisited to ensure the problem remains solution agnostic.</p><br><p>This experience highlighted that managing cognitive bias is as important as managing technical constraints in engineering design.</p><br><h3 style="color: var(--blue-accent); font-family: var(--font-head); margin-top: 1.5rem; margin-bottom: 0.5rem;">Future Action — Preventing anchoring bias through structured divergence</h3><p>In future projects, I plan to improve divergence quality by ensuring that at least one divergence session is conducted without reference to initial concepts before finalizing NGOs. Additionally, I will propose short “idea incubation periods” where the team verifies that objectives describe needs rather than preferred technologies.</p><br><p>This approach will help maintain openness in early design stages, prevent premature fixation, and ensure that the design space remains aligned with the actual problem rather than early solution ideas.</p>` },
+                { tabName: "Theory", title: "Theoretical Framework", content: "Explanation of the physical or system theory utilized to validate the structural integrity or performance." },
+                { tabName: "Method", title: "Verification Method", content: "Description of the testing protocol or analytical method deployed to evaluate the design outcomes." }
+            ]
+        }
+    ],
+
+    // ----------------------------------------
+    // REFERENCES
+    // ----------------------------------------
+    references: [
+        {
+            citation: "Engineering Design Standards, UofT Praxis",
+            description: "Used as the core framework for deriving performance and usability metrics across all structural tests."
+        },
+        {
+            citation: "Materials Science Reference Book, 2023",
+            description: "Provide the critical theoretical backing for the beam analysis used in the Matboard Bridge design."
+        }
+    ]
+};
+
+
+
+
+
+
